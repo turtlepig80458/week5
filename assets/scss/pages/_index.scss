@@ -1,0 +1,77 @@
+/* 基本設置 */
+
+* {
+  box-sizing: border-box;
+}
+/* 全域 border box  */
+*,::before,::after{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+}
+.font-mono{
+  font-family: 'Roboto Mono', monospace;
+}
+/* RWD img css 可當作css reset 其中一個 */
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+/* utilities */
+.bg-primary {
+  background-color: #aa0601;
+}
+
+/* 共用區 */
+.container{
+  max-width: 918px;  
+}
+
+
+
+
+.nav{
+  position: fixed;
+  min-width: 200px;
+  min-height: 100vh;
+
+}
+.main{
+  margin-left: 200px;
+}
+.nav-link{
+  padding: 12px 32px;
+  position: relative;
+}
+.nav-link.active::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 4px;
+  height: 32px;
+  border-left: 4px solid #198754;
+}
+.list-group-item.active{
+  color: black;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
+.expand_more {
+  display: none;
+}
+.expand_less {
+  display: inline-block;
+}
+.collapsed .expand_more {
+  display: inline-block;
+}
+
+.collapsed .expand_less {
+  display: none;
+}

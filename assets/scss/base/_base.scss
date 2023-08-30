@@ -1,0 +1,245 @@
+/* 基本設置 */
+body {
+    font-family: "Roboto", "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+/* 全域 border box  */
+*,::before,::after{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+/* RWD img css 可當作css reset 其中一個 */
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+/* utilities */
+.bg-primary {
+    background-color: #aa0601;
+  }
+  
+/* 共用區 */
+.container{
+  /* 桌機 */
+  max-width: 1320px;
+  margin: 0 auto;
+  padding:0 12px;
+
+  /* 平板 */
+  @media(max-width: 992px){
+      max-width: 720px;
+      /* 696+24gutter */
+  }
+
+  /* 手機 */
+  @media (max-width:576px) {
+      max-width: 372px;
+      /* 348+24gutter */
+  }
+}
+
+/* 抵銷掉左右邊界的 col 的左右 padding */
+.row{
+  margin-left: -12px;
+  margin-right: -12px;
+  display: flex;
+}
+
+/* .mx-12{
+  margin: 0 12px;
+} */
+
+.plr-12{
+  padding-left: 12px;
+  padding-right: 12px;
+  @media (max-width:576px) {
+      padding-top: 0;
+      padding-bottom: 0;
+  }
+}
+
+/* .col-1{
+  width: calc(100%/12);
+}
+.col-2{
+  width: calc(100%/6);
+} */
+/* 3 欄 */
+.col-3{
+  width: calc(100%/4);
+}
+/* 4 欄  */
+.col-4{
+  width: calc(100%/3);
+}
+/* .col-5{
+  width: calc(100%/12*5);
+} */
+/* 6 欄  */
+.col-6{
+  width: calc(100%/2);
+}
+/* .col-7{
+  width: calc(100%/12*7);
+}
+.col-8{
+  width: calc(100%/3*2);
+}
+.col-9{
+  width: calc(100%/12*9);
+}
+.col-10{
+  width: calc(100%/12*10);
+}
+.col-11{
+  width: calc(100%/12*11);
+} */
+.col-12{
+  width: 100%;
+}
+
+@media (max-width:992px) {
+  .col-md-10{
+      width: calc(100%/12*10);
+  }
+  .col-md-6{
+      width: calc(100%/2);
+  }
+  .col-md-12{
+      width: 100%;
+  }
+}
+@media (max-width:576px) {
+  .col-sm-12{
+      width: 100%;
+  }
+}
+
+.ma{
+  margin: 0 auto;
+}
+.flex{
+  display: flex;
+}
+.row_jcsb{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+.item_center{
+  display: flex;
+  align-items: center;
+}
+.item_end{
+  align-items: end;
+}
+.row_center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+}
+.row_start{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.row_end{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.list_start{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.list_end{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1, h2, h3, h4, h5, h6,p, a, span{
+  line-height: 1.5;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+h1, h2, h3, h4, .fz48{
+  color: #AA0601;
+}
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}
+h1{
+  font-size: 64px;
+  font-weight: 700;
+  @media (max-width:576px) {
+      font-size: 24px;
+  }
+}
+h2{
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  @media (max-width:576px) {
+      font-size: 24px;
+  }
+}
+h3{
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  @media (max-width:576px) {
+      font-size: 16px;
+  }
+}
+h4{
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+h5{
+  font-size: 20px;
+}
+p{
+  font-size: 16px;
+  font-weight: 400;
+}
+.fz48{
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+.text_center{
+  text-align: center;
+}
+.vertical_middle{
+  vertical-align: middle;
+}
+.text_white{
+  color: #fff;
+}
+.bg_lightred{
+  background-color: #fbf2f2;
+}
+.bg_red{
+  background-color: #AA0601;
+  /* height: 80px; */
+}

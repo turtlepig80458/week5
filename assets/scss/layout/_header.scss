@@ -1,0 +1,66 @@
+.logo{
+  width: 80px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+}
+.nav-wrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (max-width:576px) {
+      flex-direction: column;
+      /* 移除左右 padding 再加入 max-width: 100%; 讓導覽列能變為滿版 */
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 100%;        
+  }
+}
+.navbar-nav{
+  display: flex;
+  justify-content: space-between;
+      align-items: center;
+
+  @media (max-width:992px) {
+      flex-wrap: wrap;
+  }
+}
+.navbar-item{
+  height: 100%;
+  @media (max-width:576px) {
+      width: 50%;
+      margin-right: 0px;
+      /* 不知用意 */
+      border: 1px solid #ffffff;
+  }
+}
+.navbar-link{
+  font-size: 20px;
+  height: 100%;
+  display: block;
+  padding: 21px 32px;
+  /* 不知用意 */
+
+  @media (max-width:576px) {
+      font-size: 16px;
+      text-align: center;
+      padding: 12px 0;
+  }
+}
+.navbar-link:hover {
+  opacity: 0.7;
+}
+.navbar-item:last-child .navbar-link {
+  padding-right: 0;
+}
+.ptb-21{
+  padding: 21px 0;
+}
+.pl-64{
+  padding-left: 64px;
+}
+.ptb-16{
+  padding: 16px 0;
+}

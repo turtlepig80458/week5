@@ -1,0 +1,126 @@
+/* //////////////////footer///////////////  */
+.footer_wrap{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
+  flex-wrap: wrap;
+  @media (max-width:576px) {
+      align-items: top;
+      flex-direction: row-reverse;
+      padding-top: 24px;
+  }
+}
+.footer_jcsb{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  @media (max-width:576px) {
+      width: 25%;
+  }
+}
+
+.footer_nav{
+  @media (max-width:576px) {
+      display: none;
+  }
+}
+.icon_social{
+  width: 48px;
+  margin-left: 32px;
+  @media (max-width:992px) {
+      width: 40px;
+      margin-left: 16px;
+  }
+  @media (max-width:576px) {
+      width: 24px;
+      margin-left: 8px;
+  }
+}
+.footer_wrap2{
+  display: flex;
+  justify-content: space-between;
+  @media (max-width:576px) {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: start;
+  }
+}
+.terms{
+  display: flex;
+  flex-direction: row;
+  @media (max-width:576px) {
+      flex-direction: column;
+  }
+}
+.term{
+  margin-left: 48px;
+  @media (max-width:576px) {
+      margin: 0;
+      width: 100%;
+  }
+}
+
+.pr-48{
+  padding-right: 48px;
+}
+
+.pt-48{
+  padding-top: 48px;
+}
+.icon_phone{
+  padding: 6px;
+}
+.icon_mail{
+  padding: 8px 4px;
+}
+.icon_call{
+  font-size: 48px;
+  @media (max-width:576px) {
+      font-size: 24px;
+  }
+}
+.mr-16{
+  margin-right: 16px;
+}
+
+.ml-48{
+  margin-left: 48px;
+}
+.hr{
+  margin: 32px 0;
+  display: block;
+  @media (max-width:576px) {
+      margin: 24px 0 16px 0;
+  }
+}
+.pbb-24{
+  padding-bottom: 24px;
+}
+.pbb-8{
+  padding-bottom: 8px;
+  @media (max-width:992px) {
+      padding-bottom: 16px;
+  }
+  @media (max-width:576px) {
+      padding-bottom: 8px;
+  }
+}
+.mt-24{
+  padding-top: 24px;
+}
+.pbb-80{
+  padding-bottom: 80px;
+  @media (max-width:576px) {
+      padding-bottom: 40px;
+  }
+}
+
+// icon 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}

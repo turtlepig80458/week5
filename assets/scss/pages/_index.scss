@@ -30,7 +30,8 @@ img{
 
 /* 共用區 */
 .container{
-  max-width: 918px;  
+  max-width: 936px;  
+  padding:0 8px;
 }
 
 
@@ -43,7 +44,7 @@ img{
 
 }
 .main{
-  margin-left: 200px;
+  margin-left: 296px;
 }
 .nav-link{
   padding: 12px 32px;
@@ -64,6 +65,9 @@ img{
 }
 .p-32{
   padding: 32px;
+}
+.m-32{
+  margin: 32px;
 }
 .expand_more {
   display: none;
@@ -92,4 +96,48 @@ img{
 }
 .fz-14{
   font-size: 14px;
+}
+.ps-24{
+  padding-left: 24px;
+}
+
+.page-item{
+  width: 32px;
+  height: 32px;
+}
+.page-item > a {
+  line-height: 32px;
+}
+.page-link{
+  padding: 0px;
+  //width: 32px;
+  height: 32px;
+  text-align: center;
+}
+.page-link > span {
+  line-height: 32px;
+}
+
+.plr-3{
+  padding:3.5px 0;
+}
+
+.w-24{
+  width: 24px;
+  height: 24px;
+}
+.page-link{
+  border: 1px solid #198754;
+  color: #198754;
+}
+.page-item.active .page-link {
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.p--4{
+  padding: 4px;
+}
+.mt-69{
+  margin-top: 69px;
 }
